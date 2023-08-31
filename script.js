@@ -1,4 +1,4 @@
-onst carousel = document.querySelector(".carousel");
+const carousel = document.querySelector(".carousel");
 const slides = carousel.querySelectorAll(".carousel-slide");
 
 let currentIndex = 0;
@@ -13,4 +13,4 @@ function updateCarousel() {
     carousel.style.transform = `translateX(${offset}%)`;
 }
 
-setInterval(nextSlide, 5000); // Change slide every 3 seconds
+setInterval(nextSlide, 3000); // Change slide every 3 seconds
